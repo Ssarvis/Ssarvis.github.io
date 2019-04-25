@@ -1,89 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title> Portfolio | Stephanie Sarvis </title>
+    <meta charset="utf-8">
+    <title> Stephanie Sarvis </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="style.css"> <!-- Will create this style sheet in next checkpoint -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Hamburger menu for mobile nav-->
   </head>
-
   <body>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1> Stephanie Sarvis </h1>
-      <p class="slogan"> UI Designer </p>
-    </header>
-    <main class="mdl-layout__content mdl-grid">
-      <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-cell mdl-cell--7-col">
-          <h2 class="mdl-card__title-text">Featured Project Name</h2>
-          <p class="project-description mdl-card__supporting-text">Project description text</p>
-        </div>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Stephanie Sarvis logo">
+        </a>
       </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-           <div>
-             <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-           </div>
-           <div class="mdl-card__title">
-             <h2 class="mdl-card__title-text">Project Name</h2>
-           </div>
-           <div class="mdl-card__supporting-text">Project description text</div>
-         </div>
-
-         <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-           <div>
-             <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-           </div>
-           <div class="mdl-card__title">
-             <h2 class="mdl-card__title-text">Project Name</h2>
-           </div>
-           <div class="mdl-card__supporting-text">Project description text</div>
-         </div>
-
-         <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-           <div>
-             <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-           </div>
-           <div class="mdl-card__title">
-             <h2 class="mdl-card__title-text">Project Name</h2>
-           </div>
-           <div class="mdl-card__supporting-text">Project description text</div>
-         </div>
-
-     </main>
-
-     <footer class="mdl-mini-footer">
-       <ul class="mdl-mini-footer__link-list">
-         <li>
-          <a href="https://www.linkedin.com/in/stephanie-sarvis-081a1b114/">
+      <div class="top-right-nav"> <!--Will move list to top-right side of page and give text proper typography and color-->
+        <a href="index.html">Work</a>
+        <a href="Link to resume page">Resume</a>
+        <a href="Link to bio page">About</a>
+        <a href="Link to contact page">Contact</a>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()"> <!-- for opening and closing top nav on mobile screens-->
+          <i class="fa fa-bars"></i> <!-- There will be media queries in the css to change how the nav bar looks based on screen size-->
+        </a>
+      </div>
+    </nav>
+    <section class="hero">
+      <h4>Oh hey!</h4>
+      <h1>I'm Stephanie, a UX/UI<br>Designer in Austin, TX</h1>
+      <h3>I integrate science and art into<br>efficient, engaging experiences.</h3>
+    </section>
+    <main>
+      <h2>Projects</h2>
+      <hr> <!-- Will be stylized in css to be shorter-->
+      <a href="project.html">
+        <img src="images/modern-garden-hero.png" alt="Modern Garden landing page">
+      </a>
+      <h5>Modern Garden</h5>
+      <p>A cloud storage application for users who want to make their own natural products</p>
+    </main>
+    <footer>
+      <div class="footer"> <!--Will stylize footer to proper color (including text and line)-->
+        <p>Get in touch</p>
+        <hr>
+        <div class="social-icons"> <!--will stylize icons to proper color-->
+          <a href="https://www.linkedin.com/in/stephanie-sarvis-081a1b114/"
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
           </a>
-        </li>
-        <li>
           <a href="https://github.com/Ssarvis">
             <i class="fa fa-github-square" aria-hidden="true"></i>
           </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/stephanie.sarvis">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
           <a href="https://twitter.com/StephanieSarvis">
             <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
           <a href="mailto:stephanie_sarvis@msn.com">
             <i class="fa fa-envelope-square" aria-hidden="true"></i>
           </a>
-        </li>
-      </ul>
-    </footer>
+        </div>
+      </div>
   </body>
+  <script src="js.app.js"></script> <!--links to javascript for responsive nav bar-->
 </html>
