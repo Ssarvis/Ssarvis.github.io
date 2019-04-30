@@ -1,0 +1,49 @@
+.logo {
+  padding: 25px;
+}
+
+.toprightnav {
+  float: right;
+  overflow: hidden;
+  font-family: Arial;
+  padding: 32px;
+
+}
+
+/* Style the links inside the navigation bar */
+.toprightnav a {
+  float: left;
+  display: block;
+  color: #004E79;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.0rem;
+}
+
+/* Change the color of links on hover */
+.toprightnav a:hover {
+  font-weight: bold;
+}
+
+/* Hide the link that should open and close the topnav on small screens*/
+.toprightnav .icon {
+  display: none;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .toprightnav.responsive a.icon {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+  }
+
+  .toprightnav.responsive a {
+    float: none;
+    display: grid;
+    grid-template-rows: 4fr;
+    text-align: left;
+    z-index: 1;
+  }
+}

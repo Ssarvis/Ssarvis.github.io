@@ -1,0 +1,51 @@
+.footer {
+  background-color: #04A4FE;
+  color: #FFFFFF;
+  text-align: center;
+  display:grid;
+  position: absolute;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  padding-left: 0;
+  width: auto;
+}
+
+.footer a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer hr {
+  border-top: 3px solid #FFFFFF80;
+  margin-bottom: 1.0rem;
+  width: 21.0rem;
+}
+
+.footer i {
+  color: #FFFFFF;
+}
+
+.contact {
+  grid-template-columns: repeat(4, 1rem);
+  display: grid;
+  grid-gap: 40px;
+  justify-content: center;
+  margin-bottom: 1.0rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    grid-gap: 43px;
+  }
+
+  .footer p {
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+  }
+}
