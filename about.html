@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Stephanie Sarvis Biography </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Hamburger menu for mobile nav-->
+  </head>
+  <body>
+    <!-- Top-right nav bar + expanding links -->
+    <nav>
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="Stephanie Sarvis logo">
+        </a>
+       <div class="toprightnav" id="myToprightnav"> <!--Will move list to top-right side of page and give text proper typography and color-->
+         <a href="index.html" class="active">Work</a>
+         <a href="resume.html">Resume</a>
+         <a href="about.html">About</a>
+         <a href="contact.html">Contact</a>
+         <a href="javascript:void(0)" class="icon" onclick="expandLinks()"> <!-- for opening and closing top nav on mobile screens-->
+           <i class="fa fa-bars fa-2x"></i> <!-- There will be media queries in the css to change how the nav bar looks based on screen size-->
+         </a>
+      </div>
+    </nav>
+
+    <!-- Main page body -->
+    <div class="about-container">
+      <main>
+        <section>
+          <h1>About Me</h1>
+          <img src="images/profile.jpg">
+        </section>
+        <section>
+          <h2>An Unsure Past</h2>
+          <hr>
+          <p>
+            When I was very young, my answer to “what do you want to be when you grow
+            up?” was always “anything but an astronaut.” I had no idea what I wanted to be
+            but don’t you dare fly me into space.  What I did know was that I’ve loved
+            drawing ever since I can remember, I lived for dissection day, and I had trouble
+            putting the N64 controller down - but of course 5 year old me never imagined
+            <b>there was a career that could combine art, science, and video games.</b>
+            <br/>
+            <br/>
+            Since I showed interest in biological science, my parents convinced me that I
+            should become a doctor. During my undergraduate career I discovered that
+            while I loved learning about specific facets of biology, I was not interested in
+            pursuing medicine AT ALL. When I wasn't studying, I was drawing. My inner
+            artist was fighting for attention, and this desire to become an animator, which I
+            had been suppressing, kept resurfacing. The rigors of my studies and my
+            conflicting interests left me mentally and emotionally exhausted. In order to hit
+            the reset button and have some fun while I figure things out, I took a little
+            detour to Disney World.
+          </p>
+        </section>
+        <section>
+          <h2>The Road to Discovery</h2>
+          <hr>
+          <p>
+            My time working in the theme park industry was quite the adventure, from
+            educating guests about animals and conservation, to training and leading other
+            cast members (and even a short stint as a zookeeper). I got my first glimpse into
+            human (and animal) psychology which scratched that fascination itch, but I
+            wasn’t quite fulfilled yet. And since Disney loves to remind people to follow their
+            dreams, so I was inspired to take some art classes to see if I had what it takes.
+            </br>
+            </br>
+            Those classes taught me that my traditional drawing skills were definitely above
+            average. Unfortunately I was not interested in the 3D
+            modeling/rendering world that animation had become and was naive about
+            other potential creative careers where I could use my talent. I now felt stuck. <b>I
+            wanted to pursue a role that I would be passionate about and that would
+            enable me to help others.</b> My head and my heart kept fighting between
+            science and art. In which realm would I find this elusive, fulfilling role?
+          </p>
+        </section>
+        <section>
+          <h2>I See the Light</h2>
+          <hr>
+          <p>
+            Finally, one fateful day I learned that I don’t have to choose between
+            science and art. A couple of people at a party told me about their jobs as UX/UI
+            Designers for game studios. It sounded amazing, and after reading The
+            Design of Everyday Things I knew this was it. <b>I could pursue my love of
+            learning how things work via creative outlets, allowing me to tap into my
+            inquisitive nature by discovering what gamers' needs are and making their
+            lives easier.</b>
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer - Get In Touch links -->
+    <footer>
+      <div class="footer"> <!--Will stylize footer to proper color (including text and line)-->
+        <p>Get in touch</p>
+        <hr>
+        <div class='contact'> <!--will stylize icons to proper color-->
+          <a href="https://www.linkedin.com/in/stephanie-sarvis-081a1b114/">
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/Ssarvis">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/StephanieSarvis">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:stephanie_sarvis@msn.com">
+            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function expandLinks() {
+    var x = document.getElementById("myToprightnav");
+    if (x.className === "toprightnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "toprightnav";
+    }
+  }
+</script>
+</html>
