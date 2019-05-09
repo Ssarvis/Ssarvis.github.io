@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stephanie Sarvis Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Hamburger menu for mobile nav-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139759348-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139759348-1');
+</script>
+
+  </head>
+  <body>
+    <img src="images/logo-big.png" class="big">
+    <!-- Top-right nav bar + expanding links -->
+    <nav>
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="Stephanie Sarvis logo">
+        </a>
+       <div class="toprightnav" id="myToprightnav"> <!--Will move list to top-right side of page and give text proper typography and color-->
+         <a href="index.html" id="responsive">Work</a>
+         <a href="https://drive.google.com/file/d/1ZQ0KK9yYxWR5jn0X2pcx4JCUx69O61ps/view?usp=sharing" target="_blank" id="res">Resume</a>
+         <a href="about.html" id="res">About</a>
+         <a href="contact.html" class="active" id="res">Contact</a>
+         <a href="javascript:void(0)" class="icon" onclick="expandLinks()"> <!-- for opening and closing top nav on mobile screens-->
+           <i class="fa fa-bars fa-2x"></i> <!-- There will be media queries in the css to change how the nav bar looks based on screen size-->
+         </a>
+      </div>
+    </nav>
+
+<div class="contact-container">
+  <h1>Hit me up!</h1>
+  <p> 469-438-7656 <br>
+  stephanie_sarvis@msn.com</p>
+  <hr>
+  <div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="name">Your name:</label><br /><br>
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Your email:</label><br /><br>
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your message:</label><br /><br>
+        <textarea id="message" class="input" name="message" rows="7" cols="33"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+    <input id="submit_button" type="submit" value="Submit" />
+  </form>
+<div class="contactc">
+  <a href="https://www.linkedin.com/in/stephanie-sarvis-081a1b114/" target="_blank">
+    <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+  </a>
+  <a href="https://github.com/Ssarvis" target="_blank">
+    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+  </a>
+  <a href="https://twitter.com/StephanieSarvis" target="_blank">
+    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+  </a>
+</div>
+</div>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function expandLinks() {
+  var x = document.getElementById("myToprightnav");
+  if (x.className === "toprightnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "toprightnav";
+  }
+}
+</script>
+  </body>
+</html>

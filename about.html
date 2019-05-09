@@ -19,16 +19,17 @@
     </script>
   </head>
   <body>
+    <img src="images/logo-big.png" class="big">
     <!-- Top-right nav bar + expanding links -->
     <nav>
         <a href="index.html">
           <img class="logo" src="images/logo.png" alt="Stephanie Sarvis logo">
         </a>
        <div class="toprightnav" id="myToprightnav"> <!--Will move list to top-right side of page and give text proper typography and color-->
-         <a href="index.html">Work</a>
-         <a href="https://drive.google.com/file/d/1ZQ0KK9yYxWR5jn0X2pcx4JCUx69O61ps/view?usp=sharing">Resume</a>
-         <a href="about.html" class="active">About</a>
-         <a href="#contact">Contact</a>
+         <a href="index.html" id="responsive">Work</a>
+         <a href="https://drive.google.com/file/d/1ZQ0KK9yYxWR5jn0X2pcx4JCUx69O61ps/view?usp=sharing" target="_blank" id="res">Resume</a>
+         <a href="about.html" class="active" id="res">About</a>
+         <a href="contact.html" id="res">Contact</a>
          <a href="javascript:void(0)" class="icon" onclick="expandLinks()"> <!-- for opening and closing top nav on mobile screens-->
            <i class="fa fa-bars fa-2x"></i> <!-- There will be media queries in the css to change how the nav bar looks based on screen size-->
          </a>
@@ -105,7 +106,7 @@
     <!-- Footer - Get In Touch links -->
     <footer>
       <div class="footer"> <!--Will stylize footer to proper color (including text and line)-->
-        <a id="contact"><p>Get in touch</p></a>
+        <p>Get in touch</p></a>
         <hr>
         <div class='contact'> <!--will stylize icons to proper color-->
           <a href="https://www.linkedin.com/in/stephanie-sarvis-081a1b114/">

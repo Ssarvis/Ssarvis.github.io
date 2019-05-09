@@ -22,6 +22,10 @@ section {
   width: 100%;
 }
 
+.description {
+  margin: 0 auto;
+  width: 100%;
+}
 /* Add an active class to highlight the current page */
 .active {
   color: #04A4FE !important;
@@ -34,7 +38,10 @@ section {
   }
 
   .toprightnav.responsive {
-    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-right:10px;
   }
 
   .toprightnav.responsive a.icon {
@@ -43,11 +50,16 @@ section {
     top: 32px;
   }
 
-  .toprightnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    z-index: 1;
+  #responsive {
+   padding-top: 75px;
+   padding-right: 0px;
+   text-align: left;
+
+  }
+  #res {
+  text-align: left;
+  padding-right: 0px;
+  background-color: #F8F8F8;
   }
 
   .toprightnav a:not(:last-child) {
@@ -56,7 +68,7 @@ section {
 
   .toprightnav a.icon {
     float: right;
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -220,8 +232,8 @@ h5 {
 @media screen and (max-width: 600px) {
   .toprightnav.responsive a.icon {
     position: absolute;
-    right: 28px;
-    top: 28px;
+    right: 32px;
+    top: 32px;
   }
 
   .toprightnav.responsive a {
@@ -231,6 +243,7 @@ h5 {
     text-align: left;
     z-index: 1;
   }
+
 }
 
 /*******************************************************
@@ -335,6 +348,69 @@ h5 {
  }
 
  /*******************************************************
+  *********************Contact Page ********************
+  *******************************************************/
+
+    .contact-container {
+      margin: 0 auto;
+      width: 250px;
+    }
+
+    .contact-container p {
+      line-height: 50px;
+      font-family: 'NotoSans-Bold'
+    }
+
+    .contact-container hr {
+      height: 1px;
+      margin: 0 auto;
+      width: 96%;
+      border: 0; border-top: 3px solid #04A4FE;
+      margin-bottom: 3.5rem;
+    }
+    .contact-container a {
+      color: #04A4FE;
+    }
+
+    .contactc {
+      grid-template-columns: repeat(3, 1rem);
+      display: grid;
+      grid-gap: 40px;
+      justify-content: left;
+      margin-bottom: 1.0rem;
+    }
+
+    .required {
+      margin-bottom: 1.5rem;
+      font-family: 'Rubik-Light';
+      font-size: 14px;
+    }
+
+    input {
+      margin-bottom: 2.5rem;
+      border-color: #04A4FE;
+      padding: 5px;
+    }
+
+    textarea {
+      margin-bottom: 2.5rem;
+      border-color: #04A4FE;
+    }
+
+    #submit_button {
+      background-color: #004E79;
+      color: white;
+      text-decoration: none;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 4rem;
+    }
+
+ /*******************************************************
   ***************** From container.css ******************
   *******************************************************/
   p {
@@ -392,6 +468,10 @@ h5 {
     text-align: center;
   }
 
+  section a:hover {
+    opacity: 0.5;
+  }
+
   .container {
     margin: 0 auto;
     width: 94%;
@@ -407,7 +487,7 @@ h5 {
     height: auto;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     p {
       font-size: 1.2rem;
     }
@@ -444,6 +524,10 @@ h5 {
     .bigger {
       width: 38rem;
     }
+
+    .big {
+    display: none;
+    }
   }
 
   /*size of container for tablet*/
@@ -457,6 +541,17 @@ h5 {
     h3 {
       padding-bottom: 20.0rem;
     }
+    .description {
+      margin: 0 auto;
+      width: 500px;
+    }
+    .big {
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    }
   }
 
   /*size of container for desktop*/
@@ -468,11 +563,18 @@ h5 {
     h3 {
       padding-bottom: 20.0rem;
     }
-    h5 {
-      padding-left: 50.0rem;
+
+    .description {
+      margin: 0 auto;
+      width: 500px;
     }
-    p {
-      padding-left: 50.0rem;
+
+    .big {
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
     }
   }
 
@@ -678,6 +780,7 @@ h5 {
   display:grid;
   position: absolute;
   width: 100%;
+  margin-top: 100px;
 }
 
 .footer p {
