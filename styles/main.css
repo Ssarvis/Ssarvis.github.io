@@ -197,8 +197,8 @@ h5 {
  *******************************************************/
 .logo {
   padding: 25px;
-  width: 75px;
-  height: 75px;
+  width: 125px;
+  max-width: 125px;
 }
 
 .toprightnav {
