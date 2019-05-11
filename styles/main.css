@@ -414,9 +414,10 @@ h5 {
   ***************** From container.css ******************
   *******************************************************/
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 2.5rem;
     text-align: left;
+    line-height: 150%;
   }
 
   h1 {
