@@ -15,6 +15,22 @@ body {
   background-color: #F8F8F8;
   padding-bottom: 6rem;
   min-height: 100%;
+  font-family: 'NotoSans-Regular';
+}
+
+ul {
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+li:nth-of-type(even) {
+  background: white;
 }
 
 section {
@@ -54,8 +70,8 @@ section {
    padding-top: 75px;
    padding-right: 0px;
    text-align: left;
+ }
 
-  }
   #res {
   text-align: left;
   padding-right: 0px;
@@ -69,6 +85,14 @@ section {
   .toprightnav a.icon {
     float: right;
     display: inline-block;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+
+  img {
+    margin-bottom: 10px;
   }
 }
 
@@ -158,7 +182,7 @@ h5 {
  }
 
  .project-container h2 {
-   font-family: 'Rubik-Regular';
+   font-family: 'NotoSans-Regular';
  }
 
  /** https://stackoverflow.com/questions/3587897/best-way-to-change-font-colour-halfway-through-paragraph */
@@ -253,16 +277,16 @@ h5 {
  *******************************************************/
 
  .about-container p {
-   font-size: 1.2rem;
+   font-size: 1.6rem;
    margin-bottom: 2.5rem;
    text-align: left;
-   line-height: 125%;
+   line-height: 150%;
  }
 
  .about-container h1 {
    font-size: 5.2rem;
    color: #004E79;
-   margin-bottom: 1.0rem;
+   margin-bottom: 1.5rem;
  }
 
  .about-container h2 {
@@ -270,6 +294,7 @@ h5 {
    color:#004E79;
    text-align: center;
    margin-bottom: 1.5rem;
+   margin-top: 2.5rem;
  }
 
  .about-container hr {
@@ -278,7 +303,7 @@ h5 {
    margin: 0 auto; padding: 0;
    text-align: center;
    width: 25.4rem;
-   margin-bottom: 1.5rem;
+   margin-bottom: 0.8rem;
  }
 
  .about-container img {
@@ -325,7 +350,7 @@ h5 {
  /*size of container for tablet*/
  @media screen and (min-width: 768px) {
    .about-container p {
-     font-size: 2.0rem;
+     font-size: 1.6rem;
      padding-left: 8.5rem;
      width: 60.5rem;
    }
@@ -338,7 +363,6 @@ h5 {
  /*size of container for desktop*/
  @media screen and (min-width: 1025px) {
    .about-container p {
-     font-size: 2.0rem;
      padding-left: 19.8rem;
      padding-top: 1.2rem;
      width: 80rem;
@@ -355,12 +379,11 @@ h5 {
 
     .contact-container {
       margin: 0 auto;
-      width: 250px;
+      width: 25rem;
     }
 
     .contact-container p {
-      line-height: 50px;
-      font-family: 'NotoSans-Bold'
+      line-height: 5rem;
     }
 
     .contact-container hr {
@@ -370,33 +393,47 @@ h5 {
       border: 0; border-top: 3px solid #04A4FE;
       margin-bottom: 3.5rem;
     }
+
     .contact-container a {
       color: #04A4FE;
     }
 
+/* Contact icons below form */
     .contactc {
       grid-template-columns: repeat(3, 1rem);
       display: grid;
       grid-gap: 40px;
-      justify-content: left;
-      margin-bottom: 1.0rem;
+      justify-content: center;
+      margin: 0 auto;
     }
 
     .required {
-      margin-bottom: 1.5rem;
       font-family: 'Rubik-Light';
       font-size: 14px;
     }
 
+    form {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 50px 20px 30px 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      border-bottom: solid 3px #27a4fe;
+      border-top: solid 3px #27a4fe;
+      width: 110%;
+      display: block
+    }
+
     input {
-      margin-bottom: 2.5rem;
-      border-color: #04A4FE;
-      padding: 5px;
+      margin-bottom: 2.8rem;
+      border: solid 1px #04A4FE;
+      padding: 8px;
+      width: 100%;
     }
 
     textarea {
       margin-bottom: 2.5rem;
       border-color: #04A4FE;
+      width: 100%;
     }
 
     #submit_button {
@@ -409,14 +446,15 @@ h5 {
       display: inline-block;
       font-size: 16px;
       cursor: pointer;
-      margin-bottom: 4rem;
+      width: 100%;
+      border-radius: 25px;
     }
 
  /*******************************************************
   ***************** From container.css ******************
   *******************************************************/
   p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 2.5rem;
     text-align: left;
     line-height: 150%;
@@ -471,7 +509,13 @@ h5 {
     text-align: center;
   }
 
-  section a:hover {
+  section a img:hover {
+    opacity: 0.5;
+    box-shadow: 10px 10px 5px grey;
+    transform: translateY(-10px) scale(1.1);
+  }
+
+  a:hover {
     opacity: 0.5;
   }
 
@@ -586,7 +630,7 @@ h5 {
  ************* From project/container.css **************
  *******************************************************/
 .project-container p {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: left;
   padding-left: 0;
@@ -601,7 +645,6 @@ h5 {
 
 .project-container h2 {
   font-size: 3.0rem;
-  color:black;
   margin-bottom: 1.5rem;
   text-align: left;
   line-height: 125%;
@@ -609,7 +652,6 @@ h5 {
 
 .project-container h3 {
   font-size: 2.4rem;
-  color: black;
   margin-bottom: 3.0rem;
   text-align: left;
 }
@@ -620,7 +662,7 @@ h5 {
 
 .project-container h4 {
   font-size: 3.6rem;
-  color: black;
+  color: #004E79;
   margin-bottom: 1.0rem;
   margin-top: 1.5rem;
   text-align: center;
@@ -632,6 +674,7 @@ h5 {
   margin-bottom: 1.5rem;
   text-align: left;
   padding-left: 0;
+  color: #007CC1;
 }
 
 .project-container hr {
@@ -648,6 +691,7 @@ h5 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  padding-top: 3.0rem;
 }
 
 .project-container {
@@ -657,9 +701,39 @@ h5 {
   padding-top: 6.4rem;
 }
 
+.project-container a {
+  text-decoration: none;
+  font-family: 'Rubik-Light';
+  color: #04A4FE;
+}
+
+a.dest {
+  font-family: 'Rubik-Medium';
+  color: #007CC1;
+}
+
+.takeaway {
+  background: #E1E1E1;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: -10px;
+  box-shadow: 10px 10px 5px grey;
+  margin-bottom: 5.0rem;
+}
+
+#overview {
+  padding-bottom: 0.1rem;
+  padding-top: 2.8rem;
+  margin-top: 3.0rem;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
 .button {
   background-color: #004E79;
-  color: white;
+  color: white !important;
   text-decoration: none;
   border: none;
   padding: 15px 32px;
@@ -669,11 +743,12 @@ h5 {
   margin: 4px 2px;
   cursor: pointer;
   margin-bottom: 4rem;
+  border-radius: 25px;
 }
 
-.buttonf {
-  background-color: #04A4FE;
-  color: white;
+.buttonp {
+  background-color: #004E79;
+  color: white !important;
   text-decoration: none;
   border: none;
   padding: 15px 32px;
@@ -682,6 +757,32 @@ h5 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  margin-bottom: 4rem;
+  border-radius: 25px;
+  float: left;
+}
+
+.buttonf {
+  background-color: #04A4FE;
+  color: white !important;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.comp {
+  height: 500px;
+}
+
+
+#top {
+  vertical-align: top;
 }
 
 @media screen and (max-width: 600px) {
@@ -701,12 +802,11 @@ h5 {
   }
 
   .project-container h2 {
-    color:black;
     font-size: 1.4rem;
   }
 
   .project-container h3 {
-    color: black;
+    color: #04A4FE;
     font-size: 1.2rem;
   }
 
@@ -734,6 +834,11 @@ h5 {
   .project-container .sidebyside {
     width: 100%;
   }
+
+  .comp {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*size of container for tablet*/
@@ -743,12 +848,38 @@ h5 {
   }
 
   .project-container h3 {
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
+    color: #04A4FE;
+    font-family: 'Rubik-Light';
   }
 
   .project-container p {
-    line-height: 125%;
+    line-height: 150%;
     padding-bottom: 1.5rem;
+  }
+
+  .comp {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .comp p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    color: #007CC1;
+  }
+
+  .comp ul {
+    padding-left: 10px;
+  }
+
+  .comp li {
+    font-size: 1.2rem;
+    padding: 10px 5px 5px 10px;
   }
 }
 
@@ -765,6 +896,13 @@ h5 {
   .project-container .sidebyside {
     width:49%;
     padding-bottom: 1rem;
+  }
+
+  .comp {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   .project-container img {
@@ -784,6 +922,7 @@ h5 {
   position: absolute;
   width: 100%;
   margin-top: 100px;
+  padding: 2rem 0;
 }
 
 .footer p {
@@ -802,7 +941,7 @@ h5 {
 
 .footer hr {
   border-top: 3px solid #FFFFFF80;
-  margin-bottom: 1.0rem;
+  margin-bottom: 1.5rem;
   width: 21.0rem;
 }
 
@@ -821,6 +960,10 @@ h5 {
 @media screen and (max-width: 600px) {
   .contact {
     grid-gap: 43px;
+  }
+
+  .footer {
+    margin-top: 50px;
   }
 
   .footer p {
