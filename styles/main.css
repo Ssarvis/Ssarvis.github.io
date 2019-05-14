@@ -515,7 +515,7 @@ h5 {
     transform: translateY(-10px) scale(1.1);
   }
 
-  a:hover {
+  section a:hover {
     opacity: 0.5;
   }
 
