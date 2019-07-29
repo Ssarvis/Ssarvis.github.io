@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mass Effect UI Redesign</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Overlock:700,900|Rubik:300,400,500,700&display=swap" rel="stylesheet"> <!--Google fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Hamburger menu for mobile nav-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139759348-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139759348-1');
+    </script>
+  </head>
+  <body>
+    <!-- Top-right nav bar + expanding links -->
+    <nav>
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="Stephanie Sarvis logo">
+        </a>
+       <div class="toprightnav" id="myToprightnav"> <!--Will move list to top-right side of page and give text proper typography and color-->
+         <a href="index.html" id="responsive">Work</a>
+         <a href="images/Resume.pdf" target="_blank" id ="res">Resume</a>
+         <a href="about.html" id="res">About</a>
+         <a href="contact.html" id="res">Contact</a>
+         <a href="javascript:void(0)" class="icon" onclick="expandLinks()"> <!-- for opening and closing top nav on mobile screens-->
+           <i class="fa fa-bars fa-2x"></i> <!-- There will be media queries in the css to change how the nav bar looks based on screen size-->
+         </a>
+      </div>
+    </nav>
+
+    <!-- Main page body -->
+    <main class="project-container">
+      <section>
+        <h1><b>Mass Effect UI Redesign</b></h1>
+        <h2>
+          A redesign of Mass Effect's UI for the Equipment and Upgrade screens, updating the look and addressing user concerns.
+        </h2>
+        <div class="takeaway" id="overview">
+          <h3><strong>Roles:</strong> User Research, Information Architecture, UX/UI Design, Testing</h3>
+          <h3><strong>Duration:</strong> 4 weeks</h3>
+          <h3><strong>Tools:</strong> Adobe XD, Figma, GIMP, InVision</h3>
+          <h3><strong>Process:</strong> <a href="#comp">Competitive Analysis</a>, <a href="#survey">User Survey</a>, <a href="#persona">User Personas</a>,
+            <a href="#story">User Stories</a>, <a href="#flow">User Flows</a>, <a href="#wire">Wireframes</a>, <a href="#prototype">Prototype</a>, <a href="#test2">Usability Testing</a></h3>
+        </div>
+        <a href="https://invis.io/4HSUU6T7XVB" class="button" target="_blank"><b>Invision Prototype</b></a>
+        <a href="https://www.figma.com/file/UO0MV4nF2T27tNEJ0S61rHuE/Mass-Effect-Hi-Fi-Mockups?node-id=53%3A0" class="buttonf" target="_blank"><b>Figma File</b></a>
+        <div>
+          <img src="images/me_equip.png" alt="Mass Effect Redesigned Equipment screen" class="bigger">
+          <p id="caption">Mass Effect Redesigned Equipment Screen</p>
+        </div>
+      </section>
+
+      <!-- Summary -->
+      <section>
+        <h4><b>Summary</b></h4>
+        <hr>
+        <p>
+        Renowned for its impressive dialogue system and epic storytelling,
+        Mass Effect is a sci-fi action role-playing third-person shooter,
+        the first installment in a trilogy. However, some fans have been critical of its UI,
+        so I wanted to try my hand at improving the user experience using updated UI design concepts and methodologies.
+        </p>
+        <div class="takeaway">
+          <h5>Problem</h5>
+          <p>Since Mass Effect is a large game with a lot of menus, I decided to focus on the equipment screen of the PC version, where users had the following issues:
+            <ol>
+              <li>Inability to see all items for all characters</li>
+              <li>Wasted space/ inadequate number of items displayed at once</li>
+              <li>Underuse of visual aids</li>
+              <li>Inability to see how weapon upgrades improve weapon</li>
+              <li>Inconsistent/unclear iconography</li>
+            </ol>
+          </p>
+        </div>
+        <h5>Solution</h5>
+        <p>A re-design including more color contrast, more displayed information, re-vamped iconography, and accessibility to all squad members’ items.</p>
+        <div>
+          <img src="images/me_equip_orig.png" alt=" Modern Garden dashboard" class="sidebyside">
+          <img src="images/me_equip.png" alt="Mass Effect Equipment Screen Redesign" class="sidebyside">
+          <p id="caption">Mass Effect Equipment Screen original and redesign</p>
+        </div>
+      </section>
+
+      <!-- Discovery and Research -->
+      <section>
+        <h4><b>Discovery and Research</b></h4>
+        <hr>
+        <h5 id="comp" class="dest">Competitive Analysis</h5>
+        <p>To get a better idea of what makes game UI “good,” I conducted a
+          competitive analysis between three games that are celebrated for their
+          UI: Dead Space, Persona 5, and Tomb Raider (2013). From this analysis,
+          I concluded that perfection is not possible due to subjectivity and scope.
+          Although players prefer consistency, functionality, and visual appeal.</p>
+          <div class="comp">
+            <div><p>DEAD SPACE</p>
+          <img src="images/dead_space.jpg" class="bigger">
+        </div>
+          <div>
+            <p><strong>Strengths</strong></p>
+              <ul>
+                <li>UI is built into the environment</li>
+                <li>Never pauses gameplay, maintaining tension</li>
+                <li>Player character interacts with UI believably</li>
+              </ul>
+              <p><strong>Weaknesses</strong></p>
+              <ul>
+                <li>Not visually stunning</li>
+                <li>Inability to pause can frustrate gamers in a hurry/emergency</li>
+              </ul>
+          </div>
+          <div><p>PERSONA 5</p>
+          <img src="images/persona5.jpeg" class="bigger">
+        </div>
+          <div>
+            <p><strong>Strengths</strong></p>
+              <ul>
+                <li>Visually stunning</li>
+                <li>Great animations and transitions</li>
+                <li>Theme of menus match the game's lore</li>
+              </ul>
+              <p><strong>Weaknesses</strong></p>
+              <ul>
+                <li>Can come across as wild and messy</li>
+                <li>Can be hard to read and confusing</li>
+              </ul>
+          </div>
+          <div><p>TOMB RAIDER (2013)</p>
+          <img src="images/tomb_raider.jpg" class="bigger">
+        </div>
+          <div>
+            <p><strong>Strengths</strong></p>
+              <ul>
+                <li>Menus are beautiful, intuitive, and slickly animated</li>
+                <li>Design is simple yet striking, consistent, and polished</li>
+                <li>Functional and works with game narrative</li>
+              </ul>
+              <p><strong>Weaknesses</strong></p>
+              <ul>
+                <li>UI can be a little intrusive</li>
+                <li>UI also seems to confuse some players</li>
+              </ul>
+          </div>
+        </div>
+        <h5 id="survey" class="dest">User Survey</h5>
+        <p>I conducted a survey showing participants the original screenshots from Mass Effect and asking about what they thought about certain elements in the UI.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwt_iDtM89nVO9VZYo6RszCp0VlIkPvTyOwYaRH3RVDtczKg/viewform?usp=sf_link" class="buttonp" target="_blank"><b>Survey</b></a>
+        <p>What makes UI enjoyable for users:</p>
+        <ul>
+          <li>Responsiveness, communicativeness, vibrant contrast</li>
+          <li>Easy access to switching weapons, clearly titles pages, easy navigation</li>
+          <li>Layout, information density, organized equipment menu</li>
+        </ul>
+        <p>How users feel about Mass Effect's current UI:</p>
+        <ul>
+          <li>Bland and minimalistic, not high contrast</li>
+          <li>Symbols are a bit vague</li>
+          <li>Not enough info</li>
+        </ul>
+          <h5 id="persona" class="dest">User Personas</h5>
+          <p>From my survey, I was able to create 3 personas representing the users
+            interested in video game UI. One represents someone who works in the game
+            industry and is very knowledgeable about game UI, one represents a more
+            casual player who is a fan of the game, and one represents a player who
+            is not familiar with the Mass Effect franchise, but is still knowledgeable
+            about game UI and loves games with mods..</p>
+            <div><a href="https://www.figma.com/file/Z4VeHDxu3HzM1JjJyAO4cVQP/Mass-Effect-Personas?node-id=0%3A1" class="buttonp" target="_blank"><b>View Personas</b></a></div>
+          <img src="images/me_persona1.png" alt="User Persona Kyle" class="sidebyside">
+          <img src="images/me_persona2.png" alt="User Persona Max" class="sidebyside">
+          <img src="images/me_persona3.png" alt="User Persona Jake" class="sidebyside">
+        </section>
+
+        <!-- Information Architecture -->
+        <section>
+          <h4><b>Information Architecture</b></h4>
+          <hr>
+          <h5 id="story" class="dest">User Stories</h5>
+          <p>For the user stories, I thought of all the possible things a user would want to see and do when navigating through their equipment. After prioritizing them, I chose the following to focus on:</p>
+          <div><a href="https://docs.google.com/spreadsheets/d/16wJathKb-BLo8QH7Zhz7U2Hkfxf0jm3v7fWwMU4H4x4/edit?usp=sharing" class="buttonp" target="_blank"><b>View Stories</b></a></div>
+            <ul>
+              <li>View weapon comparison</li>
+              <li>View weapon upgrade</li>
+              <li>View ammo upgrade</li>
+              <li>View weapon details</li>
+              <li>Switch weapon types</li>
+              <li>View/manage other squad members’ equipment</li>
+            </ul>
+          <h5 id="flow" class="dest">User Flows</h5>
+          <p>I took the user stories and iterated each step in those tasks to come up with the user stories below:</p>
+          <div><a href="https://whimsical.com/vGyDoUWvbntrkgcqN4KB6" class="buttonp" target="_blank"><b>View Flows</b></a></div>
+          <img src="images/me_user_flows.png" alt="Sign in User Flow" class="bigger">
+
+          <h5 id="wire" class="dest">Wireframes</h5>
+          <p>After meticulously creating the content strategy, I drew sketches and iterated digital wireframes for all of the pages needed for the user flows.</p>
+            <div><a href="https://xd.adobe.com/view/7f7c69e1-7db1-4e65-5f1d-6f0eb462a65c-094d/" class="buttonp" target="_blank"><b>View Wireframes</b></a></div>
+          <img src="images/me_wireframe_sketch_equipment.jpg" alt="Landing page sketch" class="sidebyside" id="top">
+          <img src="images/me_wireframe_digital_equipment.png" alt="Landing page wireframe" class="sidebyside">
+          <p id="caption">Equipment Screen Wireframe (sketch and digital)</p>
+          <img src="images/me_wireframe_sketch_upgrades.jpg" alt="Dashboard sketch" class="sidebyside">
+          <img src="images/me_wireframe_digital_upgrades.png" alt="Dashboard wireframe" class="sidebyside">
+          <p id="caption">Upgrade Wireframe (sketch and digital)</p>
+        </section>
+
+        <!-- Visual Design -->
+        <section>
+          <h4><b>Visual Design</b></h4>
+          <hr>
+          <h5 id="brand" class="dest">Branding</h5>
+          <p>As this is a redesign, I wanted to maintain the original look, but at the same time give it a more modern feel.
+            I took screenshots of the original screens and used the color picker to see all of the colors that were used.
+            I scaled that down into a color palette. I also researched what typeface was used for the original and found a
+            google font very similar to that. I played around with that typeface to figure out sizes and weights I wanted to
+            use and also found a complementary typeface that helped maintain the futuristic look, but was better suited for
+            long paragraphs. I consolidated these assets along with some button and iconography work into a <a href="images/me_style_guide.pdf" target="_blank">style guide.</a>
+          </p>
+
+          <h5 id="prototype" class="dest">Hi-fi Mockup Iterations</h5>
+          <img src="images/me_equip1.png" alt="Equipment Screen 1st iteration" class="sidebyside">
+          <img src="images/me_equip2.png" alt="Equipment Screen 2nd iteration" class="sidebyside">
+          <p id="caption">Equipment Screen Hi-fi Mockup, 1st and 2nd Iterations</p>
+            <p>I generated some Hi-Fi Mockups and turned them into a Prototype.
+              After some feedback on the visual success of the still mockups and
+              the first round of user testing, I successfully made the screen easier
+              to read with more negative space. The first iteration was a little busy
+              and more prone to eye fatigue. My second attempt displays the same amount
+              of information more effectively and is also more accessible.</p>
+          <img src="images/me_upgrade1.png" alt="Upgrade 1st iteration" class="sidebyside">
+          <img src="images/me_upgrade2.png" alt="Upgrade 2nd iteration" class="sidebyside">
+          <p id="caption">Upgrade Hi-fi Mockup, 1st and 2nd Iterations</p>
+
+          <h5 id="test2" class="dest">Usability Tests</h5>
+          <p>After more testing of my prototype, I made the following changes to create a third iteration:</p>
+          <ul>
+            <li>Added extra back button on the details page for ease of use</li>
+            <li>Increased how much title bars differentiate from buttons for clarity</li>
+            <li>Grouped resources</li>
+            <li>Added arrows in inventory list comparison</li>
+          </ul>
+          <img src="images/me_equip2.png" alt="Equipment Screen 2nd iteration" class="sidebyside">
+          <img src="images/me_equip3.png" alt="Equipment Screen 3rd iteration" class="sidebyside">
+          <p id="caption">Equipment Screen Hi-fi Mockup, 2nd and 3rd Iterations</p>
+          <p>I got one more round of feedback on my prototype. The following changes were made to make the final iteration:</p>
+          <ul>
+            <li>Remove boxes around "Equipped Items" and "Inventory" sections and insert thin line between them instead, increase space between them as well</li>
+            <li>Round the corners of the buttons and bars for a more modern look</li>
+            <li>Round the scroll bar and make it thinner, create more space in list</li>
+            <li>Make the list on the right mimic the list on the left (remove bars and borders, lighten un-selected items and place thin line between items).</li>
+            <li>Added extra back button on the details page for ease of use</li>
+          </ul>
+          <img src="images/me_equip3.png" alt="Equipment Screen 3rd iteration" class="sidebyside">
+          <img src="images/me_equip_final.png" alt="Equipment Screen final iteration" class="sidebyside">
+          <p id="caption">Equipment Screen Hi-fi Mockup, 3rd and final Iterations</p>
+        </section>
+        <section>
+          <h4><b>Conclusion</b></h4>
+          <hr>
+          <p>For this project I wanted to focus on my visual/UI design skills.
+            I feel fairly pleased with my image editing and iconography creation
+            skills and will continue to practice and hone them for future projects.
+            I found that there’s so many possibilities in game UI and no single “right way”
+            to go about it. What some users liked or thought was obvious, others did not.
+            If I had more time, I would create hover states for every clickable item in the
+            prototype, create a details page for every equipped item, have every item type
+            clickable/viewable (can only view assault rifle and shotgun currently), cut/paste
+            images of all squad members in the game so you can actually switch characters, and
+            maybe even create a separate prototype for a console version as that interface would need to function differently.</p>
+          </section>
+
+      </main>
+      <footer>
+        <div class="footer"> <!--Will stylize footer to proper color (including text and line)-->
+          <p>Get in touch</p></a>
+          <hr>
+          <div class="contact"> <!--will stylize icons to proper color-->
+            <a href="https://www.linkedin.com/in/stephanie-sarvis-081a1b114/">
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Ssarvis">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/StephanieSarvis">
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:stephanie_sarvis@msn.com">
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function expandLinks() {
+          var x = document.getElementById("myToprightnav");
+          if (x.className === "toprightnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "toprightnav";
+          }
+        }
+      </script> <!--links to javascript for responsive nav bar-->
+  </body>
+</html>
